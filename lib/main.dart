@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Belajar Flutter'),
+          title: const Text('Dashboard Mahasiswa'),
         ),
         body: const Center(
           // Latihan 1: teks ditengah diubah menjadi nama sendiri
