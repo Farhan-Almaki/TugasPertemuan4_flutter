@@ -16,8 +16,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         // Latihan 2: Ubah seedColor itu ke Colors.orange
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.orange),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.orange, brightness: Brightness.light),
       ),
+      // Latihan 4: Tambahkan darkTheme dan set themeMode ke dark
+      darkTheme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.orange, brightness: Brightness.dark)
+      ),
+      themeMode: ThemeMode.dark,
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Dashboard Mahasiswa'),
