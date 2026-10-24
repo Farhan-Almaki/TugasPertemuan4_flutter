@@ -24,17 +24,25 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.orange, brightness: Brightness.dark)
       ),
       themeMode: ThemeMode.dark,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Dashboard Mahasiswa'),
-        ),
-        body: const Center(
-          // Latihan 1: teks ditengah diubah menjadi nama sendiri
-          child: Text(
-            'Farhan Al Maki',
-            style: TextStyle(fontSize: 20),
-          ),
-        ),
+      home: const ProfilePage(),
+    );
+  }
+}
+
+class ProfilePage extends StatelessWidget {
+  const ProfilePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      // Latihan 3
+      appBar: AppBar(
+        title: const Text('Dashboard Mahasiswa'),
+        centerTitle: true
+      ),
+      // Latihan 1: Nama sendiri
+      body: const Center(
+        child: Text('Farhan Al Maki', style: TextStyle(fontSize: 20))
       ),
     );
   }
